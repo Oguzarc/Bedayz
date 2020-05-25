@@ -1,0 +1,364 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D6712B12-10C9-45B2-8FA4-99F02344CD3D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication3</RootNamespace>
+    <AssemblyName>WebApplication3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Anasayfa.aspx" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\bedayzlogo.png" />
+    <Content Include="Images\es2.jpg" />
+    <Content Include="Images\es3.jpg" />
+    <Content Include="Images\es4.jpg" />
+    <Content Include="Images\es5.jpg" />
+    <Content Include="Images\es6.jpg" />
+    <Content Include="Images\facebook-logo.png" />
+    <Content Include="Images\footer.png" />
+    <Content Include="Images\footercopyright.png" />
+    <Content Include="Images\hd1.jpg" />
+    <Content Include="Images\hd2.jpg" />
+    <Content Include="Images\hd3.jpg" />
+    <Content Include="Images\hd4.jpg" />
+    <Content Include="Images\hd5.jpg" />
+    <Content Include="Images\hd6.jpg" />
+    <Content Include="Images\instagram-logo.png" />
+    <Content Include="Images\menubuton.png" />
+    <Content Include="Images\s1.jpg" />
+    <Content Include="Images\s10.jpg" />
+    <Content Include="Images\s11.jpg" />
+    <Content Include="Images\s12.jpg" />
+    <Content Include="Images\s2.jpg" />
+    <Content Include="Images\s3.jpg" />
+    <Content Include="Images\s4.jpg" />
+    <Content Include="Images\s5.jpg" />
+    <Content Include="Images\s6.jpg" />
+    <Content Include="Images\s7.jpg" />
+    <Content Include="Images\s8.jpg" />
+    <Content Include="Images\s9.jpg" />
+    <Content Include="Images\sepet.png" />
+    <Content Include="Images\slider1.jpg" />
+    <Content Include="Images\tab1.png" />
+    <Content Include="Images\tab3.png" />
+    <Content Include="Images\tab4.png" />
+    <Content Include="Images\twitter-logo.png" />
+    <Content Include="Images\urun1.jpg" />
+    <Content Include="Images\UrunFooter.png" />
+    <Content Include="Images\uyelik.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\Metodlar.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="Odeme.aspx" />
+    <Content Include="Sepet.aspx" />
+    <Content Include="style.css" />
+    <Content Include="Images\tab2.png" />
+    <Content Include="URUNLER\css\bootstrap-theme.css" />
+    <Content Include="URUNLER\css\bootstrap-theme.min.css" />
+    <Content Include="URUNLER\css\bootstrap.css" />
+    <Content Include="URUNLER\css\bootstrap.min.css" />
+    <Content Include="URUNLER\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="URUNLER\Images\bedayzlogo.png" />
+    <Content Include="URUNLER\Images\deneme11.jpg" />
+    <Content Include="URUNLER\Images\es2.jpg" />
+    <Content Include="URUNLER\Images\es3.jpg" />
+    <Content Include="URUNLER\Images\es4.jpg" />
+    <Content Include="URUNLER\Images\es5.jpg" />
+    <Content Include="URUNLER\Images\es6.jpg" />
+    <Content Include="URUNLER\Images\facebook-logo.png" />
+    <Content Include="URUNLER\Images\footer.png" />
+    <Content Include="URUNLER\Images\footercopyright.png" />
+    <Content Include="URUNLER\Images\hd1.jpg" />
+    <Content Include="URUNLER\Images\hd2.jpg" />
+    <Content Include="URUNLER\Images\hd3.jpg" />
+    <Content Include="URUNLER\Images\hd4.jpg" />
+    <Content Include="URUNLER\Images\hd5.jpg" />
+    <Content Include="URUNLER\Images\hd6.jpg" />
+    <Content Include="URUNLER\Images\instagram-logo.png" />
+    <Content Include="URUNLER\Images\menubuton.png" />
+    <Content Include="URUNLER\Images\s1.jpg" />
+    <Content Include="URUNLER\Images\s10.jpg" />
+    <Content Include="URUNLER\Images\s11.jpg" />
+    <Content Include="URUNLER\Images\s12.jpg" />
+    <Content Include="URUNLER\Images\s2.jpg" />
+    <Content Include="URUNLER\Images\s3.jpg" />
+    <Content Include="URUNLER\Images\s4.jpg" />
+    <Content Include="URUNLER\Images\s5.jpg" />
+    <Content Include="URUNLER\Images\s6.jpg" />
+    <Content Include="URUNLER\Images\s7.jpg" />
+    <Content Include="URUNLER\Images\s8.jpg" />
+    <Content Include="URUNLER\Images\s9.jpg" />
+    <Content Include="URUNLER\Images\sepet.png" />
+    <Content Include="URUNLER\Images\slider1.jpg" />
+    <Content Include="URUNLER\Images\tab1.png" />
+    <Content Include="URUNLER\Images\tab2.png" />
+    <Content Include="URUNLER\Images\tab3.png" />
+    <Content Include="URUNLER\Images\tab4.png" />
+    <Content Include="URUNLER\Images\twitter-logo.png" />
+    <Content Include="URUNLER\Images\urun1.jpg" />
+    <Content Include="URUNLER\Images\UrunFooter.png" />
+    <Content Include="URUNLER\Images\uyelik.png" />
+    <Content Include="URUNLER\js\bootstrap.js" />
+    <Content Include="URUNLER\js\bootstrap.min.js" />
+    <Content Include="URUNLER\js\Metodlar.js" />
+    <Content Include="URUNLER\js\npm.js" />
+    <Content Include="URUNLER\style.css" />
+    <Content Include="URUNLER\Urun10Sayfa.aspx" />
+    <Content Include="URUNLER\Urun11Sayfa.aspx" />
+    <Content Include="URUNLER\Urun12Sayfa.aspx" />
+    <Content Include="URUNLER\Urun2Sayfa.aspx" />
+    <Content Include="URUNLER\Urun3Sayfa.aspx" />
+    <Content Include="URUNLER\Urun4Sayfa.aspx" />
+    <Content Include="URUNLER\Urun5Sayfa.aspx" />
+    <Content Include="URUNLER\Urun6Sayfa.aspx" />
+    <Content Include="URUNLER\Urun7Sayfa.aspx" />
+    <Content Include="URUNLER\Urun8Sayfa.aspx" />
+    <Content Include="URUNLER\Urun9Sayfa.aspx" />
+    <Content Include="URUNLER\Urun1Sayfa.aspx" />
+    <Content Include="Uyelik.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.aspx.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.aspx.designer.cs">
+      <DependentUpon>Anasayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Odeme.aspx.cs">
+      <DependentUpon>Odeme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Odeme.aspx.designer.cs">
+      <DependentUpon>Odeme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sepet.aspx.cs">
+      <DependentUpon>Sepet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sepet.aspx.designer.cs">
+      <DependentUpon>Sepet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun10Sayfa.aspx.cs">
+      <DependentUpon>Urun10Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun10Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun10Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun11Sayfa.aspx.cs">
+      <DependentUpon>Urun11Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun11Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun11Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun12Sayfa.aspx.cs">
+      <DependentUpon>Urun12Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun12Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun12Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun2Sayfa.aspx.cs">
+      <DependentUpon>Urun2Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun2Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun2Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun3Sayfa.aspx.cs">
+      <DependentUpon>Urun3Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun3Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun3Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun4Sayfa.aspx.cs">
+      <DependentUpon>Urun4Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun4Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun4Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun5Sayfa.aspx.cs">
+      <DependentUpon>Urun5Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun5Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun5Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun6Sayfa.aspx.cs">
+      <DependentUpon>Urun6Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun6Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun6Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun7Sayfa.aspx.cs">
+      <DependentUpon>Urun7Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun7Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun7Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun8Sayfa.aspx.cs">
+      <DependentUpon>Urun8Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun8Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun8Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun9Sayfa.aspx.cs">
+      <DependentUpon>Urun9Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun9Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun9Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URUNLER\Urun1Sayfa.aspx.cs">
+      <DependentUpon>Urun1Sayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URUNLER\Urun1Sayfa.aspx.designer.cs">
+      <DependentUpon>Urun1Sayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Uyelik.aspx.cs">
+      <DependentUpon>Uyelik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Uyelik.aspx.designer.cs">
+      <DependentUpon>Uyelik.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="packages.config" />
+    <Content Include="URUNLER\css\bootstrap-theme.css.map" />
+    <Content Include="URUNLER\css\bootstrap.css.map" />
+    <Content Include="URUNLER\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="URUNLER\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="URUNLER\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="URUNLER\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55807</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55807/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

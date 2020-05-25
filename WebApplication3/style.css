@@ -1,0 +1,331 @@
+﻿body {
+    width:360px;
+    height:1800px;
+    background-color:#d5d5d5;
+}
+
+
+
+#wrapper{
+    width:360px;
+    height:1800px;
+    margin:0 auto;
+    background-color:#fff;
+}
+
+header {
+    position: fixed;
+    width: 360px;
+    height: 100px;
+    float: left;
+    background-color: black;
+    z-index:1;
+    
+   
+}
+
+    header #butonlar {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+
+        header #butonlar #logo {
+            float: left;
+            margin-left: 120px;
+            margin-top: 1px;
+        }
+
+        header #butonlar #uyelik {
+            float: left;
+            margin-left: 60px;
+            margin-top: 30px;
+        }
+
+        header #butonlar #sepet {
+            float: left;
+            margin: 8px;
+            margin-top: 30px;
+        }
+
+#sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    left: -300px;
+    transition: all 500ms;
+    z-index:2;
+}
+
+    #sidebar.active {
+        left: 1px;
+    }
+
+    #sidebar ul li {
+        color: black;
+        list-style: none;
+        padding: 15px 10px;
+        border-bottom: 1px solid;
+    }
+
+    #sidebar .toggle-btn {
+        position: absolute;
+        left: 325px;
+        top: 30px;
+    }
+
+        #sidebar .toggle-btn span {
+            display: block;
+            width: 28px;
+            height: 4px;
+            background: #fff;
+            margin: 5px 1px;
+            margin-left: -15px;
+        }
+
+.urun1 {
+    margin-left: 14px;
+    margin-top: 10px;
+    border: 1px solid black;
+    width: 160px;
+    height: 300px;
+    float: left
+}
+
+.urun1foto {
+    width: 150px;
+    height: 216px;
+    margin-left: 5px;
+    margin-top: 3px;
+    float:left;
+}
+
+.urun1yazi {
+    
+    float:left;
+    text-align: center;
+    
+}
+
+.urun1fiyat {
+    text-align:center;
+    float: left;
+}
+
+#urunler12 {
+    width: 360px;
+    height: auto+20px;
+    z-index:0;
+    margin-bottom:20px;
+}
+
+.tabs {
+    float: left;
+    height: 144px;
+    width: 360px;
+}
+
+.tab {
+    float: left;
+    height: 142px;
+    width: 89px;
+}
+
+.selectedTab {
+    float: left;
+    background-color: yellow;
+    height: 142px;
+    width: 89px;
+    border-top: 3px solid yellow;
+}
+
+.tabContents {
+    border: solid 1px black;
+    background-color: white;
+    width: 360px;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+
+
+.banner {
+    margin-top: 90px;
+    height: 173px;
+    width: 360px;
+    float: left;
+}
+
+.footer {
+    height: 700px;
+    width: 360px;
+    float: left;
+    background-color: #EDEDED;
+    margin-top:20px;
+}
+
+
+.UrunSayfa {
+    height: 550px;
+    width: 360px;
+    background-color:black;
+}
+.UrunAlan {
+    height: auto+20px;
+    width: 350px;
+    margin-left: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.UrunSayfaResim{
+    height:478px;
+    width:340px;
+    margin-left:5px;
+    margin-top:105px;
+    float:left;
+    
+}
+
+
+.UrunArkaGri{
+    height:1100px;
+    width:360px;
+    background-color:grey;
+    
+}
+.UrunAdi {
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.UrunFiyat{
+    float:left;
+    margin-top:45px;
+    margin-left:5px;
+   
+}
+.UrunSepet{
+    margin-top:20px;
+    float:left;
+
+}
+.UrunSatin{
+    margin-top:5px;
+    float:left;
+
+}
+
+.UrunFooter{
+    float:left
+}
+.ButonlarMenu{
+    float:left;
+    margin-top:5px;
+}
+.Uyelik{
+    background-color:grey;
+    height:800px;
+    width:360px;
+    float:left;
+   
+    
+}
+.uyelikic{
+    background-color:white;
+    height:800px;
+    width:350px;
+    margin-left:5px;
+    float:left;
+
+}
+
+.UyeGiris {
+    float:left;
+    margin-top: 135px;
+    margin-left:15px;
+    width:320px;
+    height:260px;
+}
+
+.UyeOl {
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 320px;
+    height: 48px;
+}
+
+.TextBox{
+   
+    width:320px;
+    height:48px;
+
+}
+
+.UyeButon {
+    width: 320px;
+    height: 48px;
+    background-color:orange;
+}
+
+.footer1{
+    float:left;
+}
+
+.footersocial{
+    
+    float:left;
+    margin-left:120px;
+    
+}
+
+.footerlink {
+    float: left;
+    margin-left:140px;
+}
+.footerab{
+    height:auto;
+    width:360px;
+    float:left;
+    margin:auto;
+
+}
+.footerbaslik{
+    float:left;
+    margin-left:100px;
+    margin-top:6px;
+}
+.abonelik{
+    float:left;
+    margin-left:15px;
+}
+
+.kampanya {
+    float: left;
+    margin-left: 20px;
+    margin-bottom:20px;
+    margin-top:10px;
+}
+
+.Sepet {
+    width: 360px;
+    height: auto;
+    float: left;
+    margin-top:105px;
+}
+
+.sepetyazi {
+    float: left;
+}
+
+.Sepet{
+    height:auto;
+    width:360px;
+}
